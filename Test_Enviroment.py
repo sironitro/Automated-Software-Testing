@@ -10,7 +10,7 @@ from Mixed_Integer_Linear_Programming import Mixed_Integer_Prgramming_Testing
 from Quadratic_Programming import Quadratic_Programminng_Testing
 from Assignment_Problem import Assignment_Problem_Testing
 from Integer_Programming_Knapsack import Integer_Programming_Testing
-from Differential_Testing import test_linear_prog
+from Differential_Testing.Linear_Programming import test_prog
 
 
 def Metamorphic_Test_Suite(filename):
@@ -29,7 +29,8 @@ def Differential_Test_Suite(filename):
         file.write("--------------------------------------------------------------\n") 
         file.write("Differential Testing:\n")
         file.write("--------------------------------------------------------------\n") 
-    test_linear_prog(50, filename)
+    test_prog(100, filename, mip=False) # test linear programming
+    test_prog(100, filename, mip=True) # test mixed-integer programming
     
 Metamorphic_Test_Suite("Metamorphic.txt")
 Differential_Test_Suite("Differential.txt")
