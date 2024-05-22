@@ -192,6 +192,7 @@ def test_linear_prog(num_runs, filename):
     total_time = end_time - start_time
 
     with open(filename, 'w') as file:
+        file.write("Differential Testing Results\n")
         file.write(f"Total Time: {total_time} seconds\n")
         file.write(f"Number of Potential Bugs: {potential_bugs}\n")
         file.write(f"Number of Mutations Performed: {mutations_performed}\n")
@@ -201,6 +202,5 @@ def test_linear_prog(num_runs, filename):
             file.write(f"{mutation}\n")
 
     print("Potential Bugs Found:", potential_bugs)
-
 
 test_linear_prog(num_runs=50, filename="Differential.txt")
