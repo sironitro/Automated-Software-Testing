@@ -1,0 +1,70 @@
+Mutation Log:
+Relational Operator changed from L to G
+Scalar value changed at index 0 of objective
+Scalar value changed at index 1 of objective
+Scalar value changed at index 0 of objective
+Relational Operator changed from L to E
+MIP type changed at index 0 from Integer to Continuous
+Scalar value changed at index 1 of objective
+Model Sense changed from Maximizing to Minimizing
+Scalar value changed at index 1 of objective
+Model Sense changed from Minmizing to Maximizing
+Scalar value changed at index 1 of objective
+Relational Operator changed from E to L
+Relational Operator changed from G to L
+Scalar value changed at index 0 of objective
+Unary operator inserted at index 0 of objective
+Relational Operator changed from L to G
+Scalar value changed at index 1 of objective
+Relational Operator changed from G to L
+Scalar value changed at index 1 of objective
+Relational Operator changed from L to E
+Scalar value changed at index 0 of objective
+Scalar value changed at index 1 of objective
+Scalar value changed at index 0 of objective
+Relational Operator changed from E to L
+Model Sense changed from Maximizing to Minimizing
+Relational Operator changed from L to E
+Scalar value changed at index 0 of objective
+Scalar value changed at index 1 of objective
+MIP type changed at index 0 from Continuous to Integer
+Relational Operator changed from E to L
+Scalar value changed at index 1 of objective
+Relational Operator changed from L to G
+Scalar value changed at index 0 of objective
+Relational Operator changed from L to E
+Relational Operator changed from G to E
+Unary operator inserted at index 0 of objective
+Scalar value changed at index 0 of objective
+Model Sense changed from Minmizing to Maximizing
+Scalar value changed at index 1 of objective
+Scalar value changed at index 0 of objective
+Relational Operator changed from E to L
+MIP type changed at index 1 from Integer to Continuous
+Model Sense changed from Maximizing to Minimizing
+Relational Operator changed from E to G
+Scalar value changed at index 0 of objective
+Scalar value changed at index 1 of objective
+Scalar value changed at index 1 of objective
+MIP type changed at index 1 from Continuous to Integer
+Relational Operator changed from G to L
+MIP type changed at index 0 from Integer to Continuous
+Relational Operator changed from L to G
+Scalar value changed at index 1 of objective
+Relational Operator changed from L to G
+Model Sense changed from Minmizing to Maximizing
+Unary operator inserted at index 0 of objective
+Scalar value changed at index 1 of objective
+MIP type changed at index 1 from Integer to Continuous
+Model Sense changed from Maximizing to Minimizing
+Scalar value changed at index 0 of objective
+Relational Operator changed from G to E
+Scalar value changed at index 0 of objective
+Model Sense changed from Minmizing to Maximizing
+Model Sense changed from Maximizing to Minimizing
+Scalar value changed at index 0 of objective
+MIP type changed at index 1 from Continuous to Integer
+Scalar value changed at index 1 of objective
+Scalar value changed at index 0 of objective
+Model Sense changed from Minmizing to Maximizing
+Scalar value changed at index 1 of objective

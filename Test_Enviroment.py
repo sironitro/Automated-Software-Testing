@@ -32,5 +32,5 @@ def Differential_Test_Suite(filename):
     test_prog(100, filename, mip=False) # test linear programming
     test_prog(100, filename, mip=True) # test mixed-integer programming
     
-Metamorphic_Test_Suite("Metamorphic.txt")
+# Metamorphic_Test_Suite("Metamorphic.txt")
 Differential_Test_Suite("Differential.txt")

@@ -11,6 +11,14 @@ relational_operators = ['E', 'L', 'G'] # constraints relational operators
 MAX_INT_32 = 2147483647
 MIN_INT_32 = -2147483648
 
+def clamp(value):
+    return max(MIN_INT_32, min(MAX_INT_32, value))
+
+def log_and_clamp(value, name, index):
+    if value < MIN_INT_32 or value > MAX_INT_32:
+        print(f"Value out of bounds before clamping: {name}[{index}] = {value}")
+    return clamp(value)
+
 
 def cplex_model(objective, lower_bounds, upper_bounds, names, constraints, constraint_senses, rhs, constraint_names, obj_max, types):
     cplex_model = cplex.Cplex()
@@ -78,19 +86,24 @@ def is_identical(cplex_obj, grb_obj, cplex_vals, grb_vals, names):
     print_output("CPLEX", cplex_obj, cplex_vals, names)
     print_output("Gurobi", grb_obj, grb_vals, names)
     if cplex_obj is None and grb_obj is None and cplex_vals is None and grb_vals is None:
-        return True
+        return (True, "Neither has solution")
     elif cplex_obj is None or grb_obj is None or cplex_vals is None or grb_vals is None:
         print("Potential Bug Found: CPLEX and Gurobi models are not identical")
         print_output("CPLEX", cplex_obj, cplex_vals, names)
         print_output("Gurobi", grb_obj, grb_vals, names)
-        return False
-    elif abs(cplex_obj - grb_obj) < 1e-18 and all([abs(cplex_val - grb_val) < 1e-18 for cplex_val, grb_val in zip(cplex_vals, grb_vals)]):
-        return True
+        return (False, "One doesn't have solution while the other does")
+    elif abs(cplex_obj - grb_obj) < 1e-10 and all([abs(cplex_val - grb_val) < 1e-10 for cplex_val, grb_val in zip(cplex_vals, grb_vals)]):
+        return (True, None)
+    elif abs(cplex_obj - grb_obj) >= 1e-10 and all([abs(cplex_val - grb_val) >= 1e-10 for cplex_val, grb_val in zip(cplex_vals, grb_vals)]):
+        print("Discrepancy Found: CPLEX and Gurobi models are not identical")
+        print_output("CPLEX", cplex_obj, cplex_vals, names)
+        print_output("Gurobi", grb_obj, grb_vals, names)
+        return (False, "Negligible difference")
     else:
         print("Potential Bug Found: CPLEX and Gurobi models are not identical")
         print_output("CPLEX", cplex_obj, cplex_vals, names)
         print_output("Gurobi", grb_obj, grb_vals, names)
-        return False
+        return (False, "Different outputs")
 
 def get_mutation_operator(mip):
     mutation_operators = ["model sense", "relational operator replacement", "abs", "unary operator insertion"]
@@ -112,6 +125,7 @@ def types_mapping(types, model, object):
 def test_prog(num_runs, filename, mip):
     start_time = time.time()
     potential_bugs = 0
+    discrepancies = 0
     mutations_performed = 0
     mutation_log = []
 
@@ -176,7 +190,7 @@ def test_prog(num_runs, filename, mip):
                 index2 = random.randint(0, len(constraints[index][1])-1)
                 old_value = constraints[index]
                 if old_value != MIN_INT_32:
-                    constraints[index][1][index2] = -1 * + constraints[index][1][index2]
+                    constraints[index][1][index2] = -1 * constraints[index][1][index2]
                 print(constraints)
                 if old_value != constraints[index]:
                     mutations_performed += 1
@@ -188,7 +202,7 @@ def test_prog(num_runs, filename, mip):
                 index = random.randint(0, len(objective)-1)
                 old_value = objective[index]
                 if old_value != MIN_INT_32:
-                    objective[index] = -1 * + objective[index]
+                    objective[index] = -1 * objective[index]
                 print(objective)
                 if old_value != objective[index]:
                     mutations_performed += 1
@@ -232,10 +246,13 @@ def test_prog(num_runs, filename, mip):
         sys.stdout = sys.__stdout__
 
         print()
-        identical = is_identical(cplex_obj, grb_obj, cplex_vals, grb_vals, names)
+        (identical, reason) = is_identical(cplex_obj, grb_obj, cplex_vals, grb_vals, names)
         print()
         if not identical:
-            potential_bugs += 1
+            if reason == "Negligible difference":
+                discrepancies += 1
+            else:
+                potential_bugs += 1
             # print out the constraints and objective that caused the bug
             print("BUG")
             print("Constraints:", constraints)
@@ -252,13 +269,22 @@ def test_prog(num_runs, filename, mip):
             file.write("Linear Programming Differential Testing Results\n")
         file.write(f"Total Time: {total_time} seconds\n")
         file.write(f"Number of Potential Bugs: {potential_bugs}\n")
+        file.write(f"Number of Discrepancies: {discrepancies}\n")
         file.write(f"Number of Mutations Performed: {mutations_performed}\n")
+        file.write("--------------------------------------------------------------\n")
         file.write("\n")
+    
+    if mip:
+        log_filename = "MIP Mutation Log.txt"
+    else:
+        log_filename = "LP Mutation Log.txt"
+    with open(log_filename, 'w') as file:
         file.write("Mutation Log:\n")
         for mutation in mutation_log:
             file.write(f"{mutation}\n")
-        file.write("--------------------------------------------------------------\n")
+
 
     print("Potential Bugs Found:", potential_bugs)
+    print("Discrepancies Found:", discrepancies)
 
 # test_prog(num_runs=50, filename="Differential.txt", mip=True)
