@@ -1,9 +1,13 @@
+## Overview
+This repository contains code for executing fuzzing and metamorphic testing on various problems. The tests are designed to identify potential issues and verify the correctness of the software under different conditions.
 
-### Metamorphic Testing:
+## Running Tests
+To run the tests, execute the test_environment.py script.
 
-In the Metamorphic_Testing folder, you'll find the code for various metamorphic programming experiments, each appropriately named. These experiments are executed by the Python file Testing_Environment.py, which saves information and the results in a text file named Metamorphic.txt. To ensure the security of our results, we've renamed this file to metamorphic_Results.txt. If Testing_Environment.py is run again, it will create a new file named Metamorphic.txt without overwriting the existing metamorphic_Results.txt file.
+## Running Subsets of Tests
+To test only a subset of the available tests, comment out the unwanted tests in the test_environment.py file.
 
-
-### Fuzzing:
-
-some text
+## Test Results
+The results of the tests are output to their respective folders.
+Note: Each time the tests are run, the results files are overwritten. To avoid overwriting results that are referred to in the report, they have been renamed as metamorphic_final and fuzzing_final.
+Fuzzing_Final.txt and Metamorphic_Final.txt contain the final results referred to in the report.
