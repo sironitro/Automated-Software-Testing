@@ -90,10 +90,10 @@ def Assignment_Problem_Testing(filename):
             test_assignment_model.clear() 
         
         run_counter+=1
-        print(str(run_counter)+"/"+str(nr_of_runs)+" runs completed")
+        print(str(run_counter)+"/"+str(nr_of_runs)+" AP runs completed")
             
             
-    print(str(bug)+' bugs detected during '+str(nr_of_runs)+' runs')
+    print(str(bug)+' bugs during '+str(nr_of_runs)+' runs')
     end=datetime.now()
     duration=end-start
     with open(filename, "a") as file:

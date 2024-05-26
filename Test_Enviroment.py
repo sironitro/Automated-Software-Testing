@@ -13,7 +13,6 @@ def Metamorphic_Test_Suite(filename):
         file.write("Metamorphic Testing:\n")
         file.write("--------------------------------------------------------------\n") 
     Linear_Programming_Testing(filename)
-    print("dones")
     Mixed_Integer_Prgramming_Testing(filename)
     Quadratic_Programminng_Testing(filename)
     Assignment_Problem_Testing(filename)
@@ -27,5 +26,5 @@ def Differential_Test_Suite(filename):
     test_prog(100000, filename, mip=False) # test linear programming
     test_prog(100000, filename, mip=True) # test mixed-integer programming
     
-# Metamorphic_Test_Suite("Metamorphic.txt")
+Metamorphic_Test_Suite("Metamorphic.txt")
 Differential_Test_Suite("Fuzzing.txt")

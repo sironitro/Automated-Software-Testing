@@ -75,9 +75,9 @@ def Integer_Programming_Testing(filename):
             test_knapsack_model.clear()    
            
         run_counter+=1
-        print(str(run_counter)+"/"+str(nr_of_runs)+" runs completed")
+        print(str(run_counter)+"/"+str(nr_of_runs)+" IP runs completed")
             
-    print(str(bug)+' bugs and '+str(non_bug)+' Non Bugs detected during '+str(nr_of_runs)+' runs')      
+    print(str(bug)+' bugs during '+str(nr_of_runs)+' runs')      
     end=datetime.now()
     duration=end-start
     with open(filename, "a") as file:

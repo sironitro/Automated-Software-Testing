@@ -1,5 +1,5 @@
 ## Overview
-This repository contains code for executing fuzzing and metamorphic testing on various problems. The tests are designed to identify potential issues and verify the correctness of the software under different conditions.
+This repository contains code for executing fuzzing and metamorphic testing on various problems. The tests are designed to identify potential issues and verify the correctness of the software under different conditions. To be able to run the tests Cplex and Gurobi need to be installed for python, in addition the Numpy and Datetime libraries are used.
 
 ## Running Tests
 To run the tests, execute the test_environment.py script.

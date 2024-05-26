@@ -58,7 +58,7 @@ def Quadratic_Programminng_Testing(filename):
         test_quadratic_model.add(v1**2 >= c1)
         test_quadratic_model.add(v2**2 >= c2)
         test_quadratic_model.add(v3**2 + v2**2 <=c3)
-        
+
         obj_fn = obj_mul4*(obj_mul1*v1**2 + obj_mul2*v2**2 + obj_mul3*v3**2)
         test_quadratic_model.set_objective('min', obj_fn)
         
@@ -91,10 +91,10 @@ def Quadratic_Programminng_Testing(filename):
             quadratic_model.clear()        
     
         run_counter+=1
-        print(str(run_counter)+"/"+str(nr_of_runs)+" runs completed")
+        print(str(run_counter)+"/"+str(nr_of_runs)+" QP runs completed")
     
             
-    print(str(bug)+' bugs and '+str(non_bug)+' Non Bugs detected during '+str(nr_of_runs)+' runs')
+    print(str(bug)+' bugs during '+str(nr_of_runs)+' runs')
     end=datetime.now()
     duration=end-start
     with open(filename, "a") as file:
@@ -105,5 +105,3 @@ def Quadratic_Programminng_Testing(filename):
         file.write(f"{bug} bugs detected during {nr_of_runs} runs\n")
         file.write(f"Total Duration: {round(duration.total_seconds(),2)} seconds \n")
         file.write("--------------------------------------------------------------\n") 
-
-Quadratic_Programminng_Testing("results.txt")
