@@ -8,4 +8,3 @@ To test only a subset of the available tests, comment out the unwanted tests in 
 ## Test Results
 The results of the tests are output to their respective folders.
 Note: Each time the tests are run, the results files are overwritten. To avoid overwriting results that are referred to in the report, they have been renamed as metamorphic_final and fuzzing_final.
-Fuzzing_Final.txt and Metamorphic_Final.txt contain the final results referred to in the report.
