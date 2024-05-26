@@ -16,7 +16,7 @@ def Linear_Programming_Testing(filename):
     bug=0
     non_bug=0
     nr_of_runs=1000
-    nr_of_constraints=100
+    nr_of_constraints=1000
     run_counter=0
     
     start = datetime.now()

@@ -1,0 +1,7 @@
+Quadratic Programming Testing:
+Start Date and Time: 2024-05-26 15:00:24.952727
+Number of runs: 1000
+Number of irellevant constrains: 10
+0 bugs detected during 1000 runs
+Total Duration: 133.02 seconds 
+--------------------------------------------------------------
