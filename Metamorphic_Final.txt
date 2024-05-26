@@ -2,35 +2,35 @@
 Metamorphic Testing:
 --------------------------------------------------------------
 Linear Programming Testing:
-Start Date and Time: 2024-05-26 14:56:17.042733
+Start Date and Time: 2024-05-26 21:57:58.467839
 Number of runs: 1000
 Number of irellevant constrains: 1000
 0 bugs detected during 1000 runs
-Total Duration: 39.76 seconds 
+Total Duration: 40.92 seconds 
 --------------------------------------------------------------
 Miexed Integer Linear Programming Testing:
-Start Date and Time: 2024-05-26 14:56:56.801127
+Start Date and Time: 2024-05-26 21:58:39.384900
 Number of runs: 1000
 Number of irellevant constrains: 100
 0 bugs detected during 1000 runs
-Total Duration: 18.22 seconds 
+Total Duration: 19.68 seconds 
 --------------------------------------------------------------
 Quadratic Programming Testing:
-Start Date and Time: 2024-05-26 14:57:15.018684
+Start Date and Time: 2024-05-26 21:58:59.079383
 Number of runs: 1000
 Number of irellevant constrains: 10
 0 bugs detected during 1000 runs
-Total Duration: 37.78 seconds 
+Total Duration: 36.4 seconds 
 --------------------------------------------------------------
 Assignment Problem Testing :
-Start Date and Time: 2024-05-26 14:57:52.795830
+Start Date and Time: 2024-05-26 21:59:35.479923
 Number of runs: 1000
 0 bugs detected during 1000 runs
-Total Duration: 40.57 seconds 
+Total Duration: 40.89 seconds 
 --------------------------------------------------------------
 Integer Programming Testing:
-Start Date and Time: 2024-05-26 14:58:33.363419
+Start Date and Time: 2024-05-26 22:00:16.368541
 Number of runs: 1000
 0 bugs detected during 1000 runs
-Total Duration: 88.55 seconds 
+Total Duration: 77.98 seconds 
 --------------------------------------------------------------
