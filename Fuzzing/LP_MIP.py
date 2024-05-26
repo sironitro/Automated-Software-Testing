@@ -275,9 +275,9 @@ def test_prog(num_runs, filename, mip):
         file.write("\n")
     
     if mip:
-        log_filename = "MIP Mutation Log.txt"
+        log_filename = "MIP_mutation_log_fuzzing.txt"
     else:
-        log_filename = "LP Mutation Log.txt"
+        log_filename = "LP_mutation_log_fuzzing.txt"
     with open(log_filename, 'w') as file:
         file.write("Mutation Log:\n")
         for mutation in mutation_log:
