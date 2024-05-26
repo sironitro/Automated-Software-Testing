@@ -5,12 +5,12 @@ Created on Mon May 20 10:06:19 2024
 @author: loris
 """
 
-from Linear_Programming import Linear_Programming_Testing
-from Mixed_Integer_Linear_Programming import Mixed_Integer_Prgramming_Testing
-from Quadratic_Programming import Quadratic_Programminng_Testing
-from Assignment_Problem import Assignment_Problem_Testing
-from Integer_Programming_Knapsack import Integer_Programming_Testing
-from Differential_Testing.Linear_Programming import test_prog
+from Metamorphic_Testing.Linear_Programming import Linear_Programming_Testing
+from Metamorphic_Testing.Mixed_Integer_Linear_Programming import Mixed_Integer_Prgramming_Testing
+from Metamorphic_Testing.Quadratic_Programming import Quadratic_Programminng_Testing
+from Metamorphic_Testing.Assignment_Problem import Assignment_Problem_Testing
+from Metamorphic_Testing.Integer_Programming_Knapsack import Integer_Programming_Testing
+from Metamorphic_Testing.Differential_Testing.Linear_Programming import test_prog
 
 
 def Metamorphic_Test_Suite(filename):

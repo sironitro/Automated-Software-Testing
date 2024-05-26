@@ -68,3 +68,10 @@ Number of irellevant constrains: 10
 0 bugs detected during 1000 runs
 Total Duration: 33.47 seconds 
 --------------------------------------------------------------
+Quadratic Programming Testing:
+Start Date and Time: 2024-05-26 13:34:03.166782
+Number of runs: 1000
+Number of irellevant constrains: 10
+0 bugs detected during 1000 runs
+Total Duration: 37.59 seconds 
+--------------------------------------------------------------
