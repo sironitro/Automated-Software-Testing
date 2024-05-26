@@ -14,8 +14,7 @@ import numpy as np
 def Integer_Programming_Testing(filename):
     bug=0
     non_bug=0
-    nr_of_runs=100
-    nr_of_constraints=10
+    nr_of_runs=1000
     run_counter=0
     
     
@@ -86,6 +85,6 @@ def Integer_Programming_Testing(filename):
         file.write(f"Start Date and Time: {start}\n")
         file.write(f"Number of runs: {nr_of_runs}\n")
         file.write(f"{bug} bugs detected during {nr_of_runs} runs\n")
-        file.write(f"Total Duration: {duration.total_seconds()} seconds \n")
+        file.write(f"Total Duration: {round(duration.total_seconds(),2)} seconds \n")
         file.write("--------------------------------------------------------------\n") 
 

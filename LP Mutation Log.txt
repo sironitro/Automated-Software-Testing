@@ -1,66 +1,59 @@
 Mutation Log:
-Scalar value changed at index 1 of objective
-Model Sense changed from Maximizing to Minimizing
-Scalar value changed at index 0 of objective
-Model Sense changed from Minmizing to Maximizing
-Relational Operator changed from L to E
-Model Sense changed from Maximizing to Minimizing
-Scalar value changed at index 1 of objective
-Scalar value changed at index 1 of objective
-Scalar value changed at index 1 of objective
 Relational Operator changed from L to G
-Relational Operator changed from G to E
-Relational Operator changed from E to G
-Relational Operator changed from E to G
-Relational Operator changed from G to L
-Scalar value changed at index 1 of objective
-Relational Operator changed from G to L
-Scalar value changed at index 1 of objective
-Model Sense changed from Minmizing to Maximizing
-Unary operator inserted at index 1 of objective
-Unary operator removed at index 1 of objective
-Unary operator inserted at index 0 of objective
-Scalar value changed at index 0 of objective
-Unary operator inserted at index 1 of objective
-Scalar value changed at index 0 of objective
-Relational Operator changed from L to E
 Model Sense changed from Maximizing to Minimizing
+Scalar value changed at index 1 of objective
 Model Sense changed from Minmizing to Maximizing
+Scalar value changed at index 0 of objective
+Model Sense changed from Maximizing to Minimizing
+Scalar value changed at index 0 of objective
+Scalar value changed at index 1 of objective
 Unary operator inserted at index 0 of objective
 Scalar value changed at index 1 of objective
-Model Sense changed from Maximizing to Minimizing
-Scalar value changed at index 1 of objective
 Relational Operator changed from L to G
-Relational Operator changed from E to L
 Relational Operator changed from G to E
+Scalar value changed at index 1 of objective
 Relational Operator changed from E to L
-Relational Operator changed from L to G
+Scalar value changed at index 0 of objective
+Model Sense changed from Minmizing to Maximizing
+Model Sense changed from Maximizing to Minimizing
+Model Sense changed from Minmizing to Maximizing
+Model Sense changed from Maximizing to Minimizing
+Scalar value changed at index 0 of objective
 Model Sense changed from Minmizing to Maximizing
 Scalar value changed at index 0 of objective
-Model Sense changed from Maximizing to Minimizing
+Relational Operator changed from G to L
+Relational Operator changed from L to G
+Scalar value changed at index 0 of objective
 Relational Operator changed from L to E
 Scalar value changed at index 0 of objective
-Relational Operator changed from G to E
-Scalar value changed at index 0 of objective
-Model Sense changed from Minmizing to Maximizing
+Unary operator inserted at index 0 of objective
+Model Sense changed from Maximizing to Minimizing
 Scalar value changed at index 1 of objective
-Relational Operator changed from E to L
+Scalar value changed at index 0 of objective
 Scalar value changed at index 0 of objective
 Scalar value changed at index 1 of objective
 Relational Operator changed from E to G
-Relational Operator changed from L to E
-Model Sense changed from Maximizing to Minimizing
-Model Sense changed from Minmizing to Maximizing
-Scalar value changed at index 0 of objective
-Model Sense changed from Maximizing to Minimizing
-Model Sense changed from Minmizing to Maximizing
-Relational Operator changed from E to L
 Scalar value changed at index 1 of objective
+Relational Operator changed from G to E
+Model Sense changed from Minmizing to Maximizing
+Relational Operator changed from G to E
+Model Sense changed from Maximizing to Minimizing
+Relational Operator changed from E to G
+Relational Operator changed from E to G
+Unary operator inserted at index 0 of objective
+Model Sense changed from Minmizing to Maximizing
 Scalar value changed at index 0 of objective
-Relational Operator changed from L to G
+Scalar value changed at index 1 of objective
+Model Sense changed from Maximizing to Minimizing
+Scalar value changed at index 0 of objective
+Scalar value changed at index 0 of objective
 Relational Operator changed from G to L
 Scalar value changed at index 1 of objective
-Model Sense changed from Maximizing to Minimizing
 Scalar value changed at index 0 of objective
-Relational Operator changed from L to G
 Model Sense changed from Minmizing to Maximizing
+Scalar value changed at index 0 of objective
+Model Sense changed from Maximizing to Minimizing
+Unary operator inserted at index 0 of objective
+Model Sense changed from Minmizing to Maximizing
+Unary operator removed at index 0 of objective
+Scalar value changed at index 1 of objective
