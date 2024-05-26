@@ -3,8 +3,6 @@ This repository contains code for executing fuzzing and metamorphic testing on v
 
 ## Running Tests
 To run the tests, execute the test_environment.py script.
-
-## Running Subsets of Tests
 To test only a subset of the available tests, comment out the unwanted tests in the test_environment.py file.
 
 ## Test Results
